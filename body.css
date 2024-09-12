@@ -1,0 +1,129 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.news-input {
+    width: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+/* .search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+} */
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: 15px;
+    overflow: hidden;
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #edf3f5;
+    transform: translate(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+    position: relative;
+}
+
+.add-to-favorites {
+    padding: 6px 12px;
+    background-color: #48c064;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-to-favorites:hover {
+    background-color: #218838;
+}
+
+#news-title:hover {
+    color: red;
+}
+
+.news-desc:hover {
+    color: blue;
+}
+.news-source{
+    font-size: 13px;
+}
+.news-source:hover {
+    color: #28a745;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* .body search-button {
+        width: 100%;
+        padding: 12px;
+    } */
+    
+    .news-input {
+        margin-bottom: 10px;
+    }
+
+    .card-header img {
+        height: 150px;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="body.css">
+  <link rel="stylesheet" href="footer.css">
+  <script src="script.js" defer></script>
+  <script src="body.js" defer></script>
+  <script src="https://kit.fontawesome.com/1ce671e465.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" class="company-logo">
+        <img src="news.png" alt="logo" />
+      </a>
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="cricket" onClick="onNavItemClick('cricket')">Cricket</li>
+          <li class="hover-link nav-item" id="india" onClick="onNavItemClick('india')">India</li>
+          <li class="hover-link nav-item" id="technology" onClick="onNavItemClick('technology')">Technology</li>
+          <li class="hover-link nav-item" id="politics" onClick="onNavItemClick('politics')">Politics</li>
+          <li class="hover-link nav-item"><a href="favourite.html" id="view-favourite">Favourites</a></li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input type="text" class="news-input" id="search-text" placeholder="Search"/>
+        <button class="search-button" id="search-button">Search</button>
+      </div>
+      <div>
+        <button class="nav-sign-btn"><a href="sign.html"> Sign In</a></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main section  -->
+  <main>
+    <div class="cards-container container flex" id="cardscontainer">
+    </div>
+  </main>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">This is the Title</h3>
+        <h6 class="news-source" id="news-source"></h6>
+        <p class="news-desc" id="news-desc"></p>
+        <button class="add-to-favorites">Add to Favourite</button>
+      </div>
+    </div>
+  </template>
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="footer-top">
+        <div class="footer-section">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.thehindu.com/news/international/wikileaks-assange-pleads-guilty-in-deal-with-us-that-secures-his-freedom-ends-legal-fight/article68334738.ece">World</a></li>
+            <li><a href="https://m.economictimes.com/news/politics">Politics</a></li>
+            <li><a href="https://www.moneycontrol.com/news/business/">Business</a></li>
+            <li><a href="https://indianexpress.com/section/technology/">Technology</a></li>
+            <li><a href="https://www.sciencenews.org/">Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <ul class="footersocial-icons">
+            <li><a href="https://www.facebook.com/help/668969529866328"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/hashtag/youtubelink"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <p>Subscribe to our newsletter for updates</p>
+          <form action="#" method="post" class="subscribe-form" id="subscribeForm">
+            <input type="email" name="email" class="placeholder-box" placeholder="Your email address" id="emailInput" required>
+            <button type="submit" class="footer-submit-btn">Subscribe</button>
+          </form>
+          <p id="error-message" class="error-message">Please enter a valid email address.</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your News Website. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

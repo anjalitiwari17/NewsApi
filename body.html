@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+   
+    <main>
+        <div class="cards-container container flex" id="cardscontainer">
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source"> </h6>
+                <p class="news-desc" id="news-desc">    </p>
+                <button class="add-to-favorites">Add to Favourites</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="body.js"></script>
+</body>
+
+</html>

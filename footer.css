@@ -1,0 +1,172 @@
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }  
+            .footer {
+                background-color: #333;
+                color: #fff;
+                padding: 40px 0;
+            }
+            
+            .footercontainer {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            
+            .footer-top {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            
+            .footer-section {
+                flex: 1 1 250px;
+                margin-bottom: 20px;
+            }
+            
+            .footer-section a {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .footer-section a:hover {
+                text-decoration: underline;
+                color: rgb(123, 123, 164);
+            }
+            
+            .footer-section h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            
+            .footer-section ul {
+                list-style: none;
+                padding: 0;
+            }
+            
+            .footer-section ul li {
+                margin-bottom: 10px;
+            }
+            
+            .footersocial-icons {
+                display: flex;
+                padding: 0;
+            }
+            
+            .social-icons li {
+                margin-right: 10px;
+            }
+            
+            .social-icons a {
+                color: #fff;
+                font-size: 30px;
+            }
+            
+            .social-icons a:hover {
+                color: blue;
+            }
+            
+            .subscribe-form {
+                display: flex;
+                margin-top: 10px;
+            }
+            
+            .placeholder-box:hover {
+                box-shadow: 4px 4px 4px whitesmoke;
+            }
+            
+            .subscribe-form input[type="email"],
+            .subscribe-form button {
+                padding: 10px;
+                font-size: 14px;
+                border: none;
+            }
+            
+            .footer-submit-btn:hover {
+                box-shadow: 4px 4px 4px red;
+            }
+            
+            .subscribe-form input[type="email"] {
+                flex: 1;
+                margin-right: 10px;
+                border-radius: 10px;
+            }
+            
+            .subscribe-form button {
+                background-color: #ff5733;
+                color: #fff;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+            
+            .footer-bottom {
+                text-align: center;
+                margin-top: 20px;
+                padding-top: 20px;
+                border-top: 1px solid #666;
+            }
+            
+            .error-message {
+                color: red;
+                display: none;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+            @media (max-width: 768px) {
+                .footer-top {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .footer-section {
+                    flex: 1 1 100%;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+            
+                .subscribe-form {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .subscribe-form input[type="email"],
+                .subscribe-form button {
+                    width: 100%;
+                    margin: 5px 0;
+                }
+            
+                .social-icons {
+                    justify-content: center;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .footer-section h3 {
+                    font-size: 16px;
+                }
+            
+                .footer-section ul li {
+                    font-size: 14px;
+                }
+            
+                .social-icons a {
+                    font-size: 24px;
+                }
+            
+                .subscribe-form input[type="email"],
+                .subscribe-form button {
+                    padding: 8px;
+                    font-size: 12px;
+                }
+            }
+            
+
+/* ///// */
+
+            .footersocial-icons{
+                gap:5px;
+                font-size: 20px;
+            }
